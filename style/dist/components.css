@@ -1,0 +1,51 @@
+.btn-primary {
+  background-color: #F1CDB3;
+  padding: 15px 0;
+  width: 207px;
+  border: none;
+  border-radius: 100px;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+.btn-primary:hover {
+  background-color: #FDDCC4;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  padding: 15px 0;
+  width: 207px;
+  border: none;
+  border-radius: 100px;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  transition: 0.4s;
+  border: 1px solid #F1CDB3;
+}
+.btn-secondary:hover {
+  background-color: #FDDCC4;
+  cursor: pointer;
+}
+
+.donate__infobox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: start;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #F1CDB3;
+  transition: 0.4s;
+}
+.donate__infobox:hover {
+  background-color: #FDDCC4;
+  cursor: pointer;
+}
+.donate__infobox h4 {
+  margin-left: 20px;
+  color: #545454;
+}

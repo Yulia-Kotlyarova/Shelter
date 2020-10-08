@@ -1,0 +1,48 @@
+@import "const.scss";
+
+.footer {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0 40px;
+    background: linear-gradient(317deg, $back-prime 60%, $back-second);
+    &::after {
+        @include back-pattern;
+    }
+    h3 {
+        width: 70%;
+        color: $light-font;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    h4 {
+        color: $emphasis-font-color;
+        margin: 0 0 0 20px;
+        letter-spacing: 1.2px;
+    }
+    &__links, 
+    &__visit {
+        a {
+            @include flex-between;
+            justify-content: start;
+            padding-bottom: 40px;
+        }
+    }
+    &__links {
+        padding: 56px 0 0;
+    }
+
+    &__visit {
+        padding: 56px 10px 0 0;
+    }
+    &__photo {
+        align-self: flex-end;
+    }
+    &__address-box {
+        width: 80%;
+    }
+    &__address:last-child {
+        transform: translateY(-12px);
+    }
+}

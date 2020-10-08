@@ -1,0 +1,46 @@
+$main-font-color: #545454;
+$secondary-font-color: #B2B2B2;
+$color-dark-xl: #4C4C4C;
+$light-font: #fff;
+$dark-font: #292929;
+$emphasis-font-color: #F1CDB3;
+
+$primary-btn-color: #F1CDB3;
+$btn-boundary: #F1CDB3;
+$hover-btn-color: #FDDCC4;
+
+$back-second: #5B483A;
+$back-prime: #211F20;
+$back-light: #F6F6F6;
+
+$header2-font: 4.4rem;
+$header3-font: 3.5rem;
+$header4-font:2rem;
+$header5-font: 1.5rem;
+$p-l-font: 1.5rem;
+$p-s-font: 1.2rem;
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin back-pattern {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('../../assets/icons/back-pattern.svg') repeat;
+  pointer-events: none;
+}

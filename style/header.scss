@@ -1,0 +1,77 @@
+@import "const.scss";
+@import "components.scss";
+
+.header {
+    position: relative;
+    width: 100%;
+    padding: 0 40px;
+    color: $light-font;
+    box-sizing: border-box;
+    background: linear-gradient(317deg, $back-prime 60%, $back-second);
+    &::after {
+        @include back-pattern;
+    }
+
+    .header-top {
+        z-index: 2;
+        padding: 60px 0;
+        @include flex-between;
+    }
+
+    .logo-box{
+        &__logo {
+            color: $emphasis-font-color;
+            margin: 0;
+            font-size: 3.2rem;
+            letter-spacing: 2px;
+        }
+        &__subtitle {
+            font-size: 1.3rem;
+            color: $light-font;
+            line-height: 32px;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    .menu-list {
+        @include flex-between;
+        width: 37%;
+        margin-top: 3px;
+    }
+
+    .menu-item {
+        list-style: none;
+        font-size: $p-l-font;
+        font-family: Arial, Helvetica, sans-serif;
+        a {
+            color: $light-font;
+            &:hover {
+                border-bottom: 2px solid $emphasis-font-color;
+            }
+        }
+    }
+}
+
+.header-down{
+    z-index: 2;
+    @include flex-between;
+    color: $light-font;
+    &__image {
+        width: 57.5%;
+    }
+    &__textbox {
+        width: 40%;
+        margin-bottom: 86px;
+        h2 {
+            margin: 0;
+            line-height: 130%;
+            max-width: 80%;
+        }
+        p {
+            margin: 42px 0 41px;
+            line-height: 160%;
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 97%;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import "const.scss";
+
+@mixin button {
+    padding: 15px 0;
+    width: 207px;
+    border: none;
+    border-radius: 100px;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    transition: 0.4s;
+    &:hover {
+        background-color: $hover-btn-color;
+        cursor: pointer;
+    }
+  }
+
+.btn-primary {
+    background-color: $primary-btn-color;
+    @include button;
+
+}
+
+.btn-secondary {
+    background-color: $light-font;
+    @include button;
+    border: 1px solid $primary-btn-color;
+}
+
+.donate__infobox {
+    @include flex-between;
+    justify-content: start;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: $primary-btn-color;
+    transition: 0.4s;
+    &:hover {
+        background-color: $hover-btn-color;
+        cursor: pointer;
+    }
+    h4 {
+        margin-left: 20px;
+        color: $main-font-color;
+    }
+}
