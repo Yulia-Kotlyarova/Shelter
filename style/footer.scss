@@ -5,6 +5,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 0 40px;
     background: linear-gradient(317deg, $back-prime 60%, $back-second);
     &::after {
@@ -23,6 +24,8 @@
     }
     &__links, 
     &__visit {
+        width: 35%;
+        min-width: 380px;
         a {
             @include flex-between;
             justify-content: start;
@@ -45,4 +48,8 @@
     &__address:last-child {
         transform: translateY(-12px);
     }
+}
+
+@media (max-width: 992px) {
+
 }

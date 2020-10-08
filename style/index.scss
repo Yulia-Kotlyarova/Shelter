@@ -60,14 +60,15 @@ small {
 
 .about-shelter {
     @include flex-around;
+    justify-content: center;
     padding: 80px 40px 100px;
     img {
-        padding-left: 114px;
+        margin: 0 5%;
     }
     &__textbox {
         align-self: flex-start;
         width: 36%;
-        padding-right: 111px;
+        margin: 0 5%;
         padding-top: 14px;
         p {
             color: $color-dark-xl;
@@ -93,8 +94,9 @@ small {
         position: absolute;
         top: 48.5%;
         border: 2px solid $emphasis-font-color;
-        padding: 23px 18px;
+        padding: 22px 18px;
         border-radius: 50%;
+        transition: 0.4s;
         &:hover {
             background-color: $hover-btn-color;
             cursor: pointer;
@@ -186,7 +188,6 @@ small {
         }
         h4{
             line-height: 18px;
-            margin: 0;
         }
         h5 {
             margin-left: 10px;
@@ -195,5 +196,19 @@ small {
     .donate__photo{
         margin: 50px 0 0 0;
         transform: translateX(-24px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .donate {
+        &__textbox {
+            width: 35%;
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    h3 {
+        font-size: 2.5rem;
     }
 }
