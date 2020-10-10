@@ -1,0 +1,57 @@
+@import "const.scss";
+@import "components.scss";
+
+html {
+    font-size: 10px;
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 1.5rem;
+    max-width: 1280px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    color: $main-font-color;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+h1 {
+    font-weight: normal;
+}
+
+h2 {
+    font-size: $header2-font;
+    font-weight: normal;
+    line-height: 57.2px;
+}
+
+h3 {
+    font-size: $header3-font;
+    font-weight: normal;
+    line-height: 45.5px;
+    letter-spacing: 2px;
+}
+
+h4 {
+    font-size: $header4-font;
+    font-weight: normal;
+    line-height: 23px;
+}
+
+h5 {
+    font-size: $header5-font;
+    font-weight: normal;
+    line-height: 16.5px;
+}
+
+small {
+    font-size: $p-s-font;
+    font-style: italic;
+    color: $secondary-font-color;
+}

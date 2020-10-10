@@ -12,7 +12,7 @@
         @include back-pattern;
     }
     h3 {
-        width: 70%;
+        width: 280px;
         color: $light-font;
         margin-top: 0;
         margin-bottom: 40px;
@@ -25,7 +25,7 @@
     &__links, 
     &__visit {
         width: 35%;
-        min-width: 380px;
+        min-width: unset;
         a {
             @include flex-between;
             justify-content: start;
@@ -41,6 +41,7 @@
     }
     &__photo {
         align-self: flex-end;
+        z-index: 1;
     }
     &__address-box {
         width: 80%;
@@ -51,5 +52,38 @@
 }
 
 @media (max-width: 992px) {
+    .footer {
+        &__links, 
+        &__visit {
+            width: 44%;
+        }
+    }
+}
 
+@media (max-width: 700px) {
+    .footer {
+        justify-content: center;
+        &__links, 
+        &__visit {
+            width: 70%;
+            // margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 415px) {
+    .footer {
+        padding: 0 10px;
+        &__links, 
+        &__visit {
+            width: 370px;
+            margin: 0 auto;
+            h3 {
+                text-align: center;
+            }
+            h4 {
+                white-space: nowrap;
+            }
+        }
+    }
 }
